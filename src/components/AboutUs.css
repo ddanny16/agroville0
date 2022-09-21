@@ -1,0 +1,76 @@
+
+
+
+.heropig {
+    background: url(../assets/pigs1.png);
+
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+
+}
+
+.heropiggy {
+    background-color: #223ebbe3;
+ 
+    /* align-items: center; */
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    
+}
+
+heropigh {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
+    margin: 0 auto;
+
+
+}
+
+about {
+    text-align: center;
+    padding: 40px;
+}
+
+about p {
+    color: #fff;
+    text-align: center;
+    padding: 9px;
+}
+
+@media screen and (max-width:1200px) {
+    heropigh {
+        display: flex;
+        /* grid-template-columns: auto auto auto auto; */
+        flex-direction: column;
+        gap:55px;
+    }
+}
+/* @media screen and (max-width:00px){} */
+
+@media screen and (max-width:600px){
+    about {
+        text-align: center;
+        padding:1px;
+        transition:1s all ease-in-out;
+    }
+    
+    about p {
+        color: #fff;
+        text-align: center;
+        padding:1px;
+        transition:1s all ease-in-out;
+    }
+    heropigh {
+
+        display: grid;
+        grid-template-columns: auto ;
+        width: 100%;
+        margin: 0 auto;
+        /* background:  #223ebbe3; */
+    }
+
+}

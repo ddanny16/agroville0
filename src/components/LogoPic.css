@@ -1,0 +1,25 @@
+logotext p {
+    text-align: center;
+    color: blue;
+    display: none;
+}
+
+logos {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 07%;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width:700px){
+    logotext p{
+        display: block;
+        font-weight: 500;
+        margin-top: 10px;
+        transition: all 1s ease-in-out;
+    }
+}

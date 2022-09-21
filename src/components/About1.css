@@ -1,0 +1,36 @@
+span p {
+    color: white;
+    
+    line-height: 27px;
+
+}
+
+span c {
+    color: rgba(34, 61, 187, 1);
+    background: #FFFFFF;
+    padding:10px 15px;
+
+}
+bunny{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+@media screen and (max-width:1200px) {
+    bunny {
+        margin:0 auto;
+        width:85%;
+    }
+}
+@media screen and (max-width:800px){
+    br{
+        display:none;
+    }
+    span p {
+        color: white;
+        
+        line-height: none;
+        font-size:15px;
+    
+    }
+}

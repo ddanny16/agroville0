@@ -1,0 +1,122 @@
+.air {
+    background:
+        #F6F8FD;
+}
+
+
+
+label {
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    display: block;
+    text-transform: capitalize;
+    font-size: 23px;
+
+}
+
+
+
+channel {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin: auto;
+    max-width: 600px;
+}
+
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #223ebb21;
+    border-color: #3048b045;
+    color: #f4f4f4;
+    border-radius: 06px;
+    color: black;
+    text-transform: capitalize;
+    width: 100%;
+
+}
+
+button {
+    font-size: 14px;
+    background-color: #223DBB;
+    border-color: #bec8f9c9;
+    color: #f4f4f4;
+    border-radius: 6px;
+    /* color: black; */
+    text-transform: capitalize;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    cursor: pointer;
+    padding: 1rem 1rem;
+}
+
+button:hover {
+    background-color: #f4f4f4;
+    color: #223DBB;
+    box-shadow: #223DBB 70%;
+    transition: all 1s ease-in-out;
+}
+
+/* .textmsg{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+chance {
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    top: 41px;
+    left: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    channel {
+        flex-direction: column;
+    }
+
+    chance {
+        display: none;
+    }
+
+    label {
+        font-size: 19px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    form input,
+    form textarea {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        transition:all 1s ease-in-out;
+    }
+}

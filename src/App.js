@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import Home from './routes/Home'
+import Investments from './routes/Investments'
+import Contact from './routes/Contact'
+import Profile from './routes/Profile'
+import Vertinary from './routes/Vertinary'
+import Products from './routes/Products'
+import Cart from './routes/Cart'
+import ProfileHome from './pages/ProfileHome'
+import Profile1 from './pages/Profile1'
+import AddressBook from './pages/AddressBook'
+import Notifications from './pages/Notifications'
+import ChangePassword from "./pages/ChangePassword"
 
-function App() {
+import { Route, Routes } from 'react-router-dom'
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/investments' element={<Investments />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/profile' element={<Profile />} >
+       
+        <Route path='profilehome' element={<ProfileHome />} />
+        <Route path='profile1' element={<Profile1 />} />
+        <Route path='addressbook' element={<AddressBook />} />
+        <Route path='notifications' element={<Notifications />} />
+        <Route path='changepassword' element={<ChangePassword />} />
+
+     
+        </Route>
+        <Route path='/vertinary' element={<Vertinary />} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/cart' element={<Cart />} />
+      </Routes>
+    </>
+  )
 }
 
 export default App;
+
+
+
+

@@ -1,0 +1,98 @@
+.mask1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.into-img1 {
+  width: 35rem;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+
+}
+
+.mask1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+
+}
+
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background:  #F6F8FD;
+}
+
+hance {
+  display: none;
+}
+
+
+@media screen and (max-width:1300px) {
+
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .into-img1 {
+    margin-top: 60px;
+    transition: all 1s cubic-bezier(0.71, 0.07, 0.04, 1.04);
+    ;
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+  hance {
+    display: block;
+    font-size: 35px;
+    font-weight: 500px;
+    text-align: left;
+    margin-left: 18px;
+    top: 30px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .into-img1{
+    width:100%;
+    height:100%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  hance {
+    display: block;
+    font-size: 25px;
+    font-weight: 500px;
+    position: relative;
+    text-align: left;
+    margin-left: 18px;
+    top: 15px;
+  }
+}
